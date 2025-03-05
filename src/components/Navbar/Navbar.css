@@ -1,0 +1,161 @@
+/* Importing Tailwind CSS and Google Fonts */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&family=Noto+Serif+Tamil:wght@100..900&family=Poltawski+Nowy:wght@400..700&display=swap');
+
+/* Navbar Styles */
+.navbar {
+    font-family: "Poltawski Nowy", serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px 130px 15px 130px;
+}
+
+
+
+/* Logo Section */
+.logo {
+    position: relative;
+    width: 20%;
+}
+
+
+
+
+/* Navigation Menu */
+.menu {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.menu ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/* Icons for Favorite, Cart, and Login */
+.icon {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu-icon, .order-icon, .login-icon {
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 35px;
+}
+
+.menu-icon img, .order-icon img{
+    width: 35px;
+    height: 35px;
+}
+
+.login-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Notification Dot */
+.menu-icon .dot, .order-icon .dot {
+    position: absolute;
+    min-width: 17px;
+    min-height: 17px;
+    background-color: #EA641A;
+    border-radius: 50px;
+    top: -5px;
+    right: 45px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Mobile Menu Icon */
+.mobile-view-icon {
+    display: none;
+}
+
+.mobile_view {
+    display: none !important;
+}
+
+/* Active Link Color */
+.navbar .active {
+    color: #EA641A;
+}
+
+
+
+
+/* Mobile Navigation Styles */
+@media (max-width: 1100px) {
+
+    .navbar {
+        margin: 20px 50px;
+    }
+
+
+    .logo, .logo-img {
+        width: 150px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .mobile-view-icon {
+        display: flex;
+        width: 50px;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .mobile_view {
+        display: flex !important;
+    }
+
+    .menu ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(94, 93, 93);
+        width: 300px;
+        padding-top: 80px;
+        transition: transform 0.5s ease-in-out;
+        z-index: 10;
+    }
+
+    .menu ul  li{
+        padding-top: 10%;
+    }
+
+    /* Hide and show mobile menu */
+    .hide-mobile-menu {
+        transform: translateX(100%);
+    }
+
+    .show-mobile-menu {
+        transform: translateX(0);
+    }
+}

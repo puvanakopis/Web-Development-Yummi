@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Praise&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.MainHeading{
+  font-family: "Poltawski Nowy", serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3); 
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 100px;
+  position: relative;
+  border-bottom: 2px solid #EA641A; 
+}
+
+.mainButton {
+  cursor: pointer;
+  background-color: #EA641A;
+  height: max-content;
+  width: max-content !important;
+  padding: 10px 35px !important;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+
+.mainButton:hover{
+  color: black;
+  background-color: #EA641A !important;
+}
+
+.ScrollingAnimation {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 6s ease-out, transform 1.8s ease-out;
+}
+
+
+.ScrollingAnimation.show {
+  opacity: 1;
+  transform: scale(1);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 640px) { 
+  .MainHeading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) { 
+  .MainHeading {
+    font-size: 31px;
+  }
+}
+
+@media (min-width: 1024px) { 
+  .MainHeading {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1280px) { 
+  .MainHeading {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .MainHeading{
+    font-size: 35px;
+  }
+}

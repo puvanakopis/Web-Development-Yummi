@@ -1,0 +1,57 @@
+.Feature{
+    font-family: "Poltawski Nowy", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.Feature .Features{
+    height: fit-content; 
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Feature .Features .Features-1{
+    height: 400px; 
+    width: 380px;
+    padding: 10px 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: rgba(0, 0, 0, 0.123) 2px solid ;
+    background-color: #F0F0F0;
+    transition: all 0.2s ease-in-out;
+}
+
+.Feature .Features .Features-1:hover{
+    transform: scale(1.03);
+}
+
+.Feature .Features .Features-1 div{
+    background-color: #EA641A;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+.Feature .Features .Features-1 div img{
+    width: 50px;
+}
+
+.Feature .Features div h1{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Feature .Features div p{
+    text-align: justify !important;
+}

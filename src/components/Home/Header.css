@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Praise&display=swap');
+
+
+@layer utilities;
+.Header{
+    font-family: "Poltawski Nowy", serif;
+    margin: 0px 0px 15px 0px;
+    background: radial-gradient(circle at center, #e9722f, #a33d06);
+    height: 50vw;
+    animation: fadeIn 1s;
+}
+
+.Header img{
+    height: 50vw;
+}
+/* 
+.div1{
+    height: 42vw;
+}
+
+.div1 .div1-1{
+    color: #FFCB45;
+    font-style: italic;
+    font-size: 40px;
+    padding-top: 4%;
+    text-align: end;
+}
+
+.div1 .div1-2{
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 60px;
+    padding-top: 4%;
+    text-align: start;
+}
+
+.div1 .div1-3{
+
+}
+
+.div2{
+
+}
+
+.div2 .headerImg{
+    width: 500px;
+}
+
+.div3{
+    background-color: aqua;
+    height: 100px;
+} */

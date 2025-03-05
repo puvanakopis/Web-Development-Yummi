@@ -1,0 +1,58 @@
+.Offers{
+    font-family: "Poltawski Nowy", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.div{
+    width: 100%;
+    height: fit-content;
+    padding-top: 25px;
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.div1 img{
+    border-radius: 10px;
+    width: 90%;
+}
+
+
+
+.div2 {
+    margin-top: 5%;
+}
+
+
+.div2 .div2-1{
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.div2 .div2-2{
+    color: #EA641A;
+    font-size: 25px;
+    font-style: italic;
+    text-align: end;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.div2 .div2-3{
+    display: flex;
+    justify-self: end;   
+}
+
+

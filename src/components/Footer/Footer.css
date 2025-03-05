@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Praise&display=swap');
+
+
+/* Footer container styling */
+.Footer{
+    font-family: "Poltawski Nowy", serif; /* Applying selected font */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    height: fit-content;
+    background-color: #D9D9D9;
+}
+
+
+
+
+/* First section - Logo and Social Media */
+.f1{
+    height: max-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+    justify-content: center !important;
+
+}
+
+/* Logo container */
+.f1 .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 300px;
+}
+
+
+/* Social media icons container */
+.social_media{
+    position: relative;
+}
+
+.social_media .media{
+    position: relative;
+    color: #EA641A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_media .media:hover{
+    scale: 1.1;
+}
+
+
+
+
+/* Second, third, and fourth sections */
+.f2, .f3, .f4 {
+    height: max-content;
+    padding: 60px 60px;
+}
+
+.f2 h1, .f3 h1, .f4 h1 {
+    font-size: 24px;
+}
+
+.f2 ul, .f3 ul, .f4 ul {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 5px 15px;
+    color: #606060;
+}
+
+.f2 ul li, .f3 ul li, .f4 ul li {
+    transition: all 0.3s; 
+}
+
+.f2 ul li:hover , .f3 ul li:hover, .f4 ul li:hover {
+   color: #EA641A;
+   transform: translateX(10px);
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+    .f1{
+        display: none;
+    }
+    .f2 , .f3 ,  .f4{
+      width:30%;
+    }
+  }
+  
+@media (max-width: 800px) {
+    .f1 , .f3{
+      display: none; 
+    }
+    .f2 , .f4{
+      width: 33.3%;
+    }
+}
+  
+@media (max-width: 700px) {
+    .f2  , .f3, .f4{
+      display: none; 
+    }
+
+    .f1{
+        display: flex !important;
+        width: 100%;
+    }
+}

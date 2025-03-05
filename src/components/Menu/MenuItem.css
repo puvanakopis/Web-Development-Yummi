@@ -1,0 +1,131 @@
+.MenuItem{
+    margin-top: 50px;
+    font-family: "Poltawski Nowy", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 0 50px 0;
+    animation: fadeIn 1s;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.MenuItem {
+  display: grid;
+  place-items: center;
+  gap: 2.5rem;
+  
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+
+ 
+  @media (min-width: 850px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1450px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+
+  
+  .itemsList {
+      height: 250px;
+      width: 300px;
+      border-radius: 5px;
+      border: rgba(0, 0, 0, 0.123) 2px solid;
+      transition: all 0.3s;
+      opacity: 0;
+  }
+
+
+.itemsList img{
+    width: 300px;
+    height: 170px;
+    border-radius:5px 5px 0 0;
+}
+
+.itemsList:hover{
+    transform: scale(1.02);
+}
+
+
+.itemsDesc{
+    padding: 10px;
+}
+
+.itemsDesc .name{
+   font-size: 18px;
+   font-weight: 600;
+}
+
+/* .itemsDesc .rate{
+ 
+} */
+
+.itemsDesc .price{
+    font-size: 15px;
+    font-weight: 1000;
+    color:#e07c47 ;
+}
+
+.itemsDesc .order{
+    font-size: 15px;
+    background-color:#e07c47 ;
+    width: fit-content;
+    padding: 2px 15px;
+    border-radius: 3px;
+    color: white;   
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+.itemsDesc .order:hover{
+    color: rgb(0, 0, 0);    
+}
+
+
+
+
+
+
+
+
+.pagination button {
+    border: 2px 0 2px 0 solid #EA641A ; /* Fix: Added 'solid' */
+    /* background-color: #ea641a33;  */
+    padding: 10px 15px;
+    cursor: pointer; /* Optional: Makes it clear it's clickable */
+
+}
+
+
+
+
+
+
+.HomeMenuItemList {
+    opacity: 0; /* Start hidden */
+    transform: scale(0.9); /* Initial scale */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+  }
+  
+  .HomeMenuItemList.show {
+    opacity: 1; /* Final opacity */
+    transform: scale(1); /* Final scale */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

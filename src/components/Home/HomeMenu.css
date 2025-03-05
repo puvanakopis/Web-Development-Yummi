@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Praise&display=swap');
+
+.HomeMenu{
+    font-family: "Poltawski Nowy", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomeMenuItem{
+    width: 100%;
+}
+
+.HomeMenuItemList{
+    width: 300px;
+    height: 390px;
+    border-radius: 8px;
+    margin: 20px 0 20px 0;
+    border: rgba(0, 0, 0, 0.123) 2px solid ;
+    transition: all 0.3s;
+    animation: forwards fadeIn;
+}
+
+
+.HomeMenuItemList:hover{
+    transform: scale(1.02);
+}
+
+.HomeMenuItemList img{
+    width: 300px;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+}
+
+.HomeMenuItemList .naming{
+    padding: 20px 15px 0 15px;
+    height: 50px;
+    font-weight: 700;
+    width: 100%;
+}
+
+
+.HomeMenuItemList .naming .rate{
+    display: flex;
+    align-items: center;
+}
+
+.HomeMenuItemList .naming .name{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+.HomeMenuItemList .naming2{
+    padding: 7px 15px 7px 15px;
+    height: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomeMenuItemList .naming2 .price{
+    color: #EA641A;
+    padding-bottom: 10px;
+    width: 100%;
+    font-weight: 700; 
+}
+
+
+.HomeMenuItemList .naming2 .order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EA641A;
+    border-radius: 5px;
+    padding: 5px 25px;
+    width: fit-content;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.HomeMenuItemList .naming2 .order:hover{
+    color: white;
+}
+
+
+.navigate{
+    margin-top: 40px;
+}
