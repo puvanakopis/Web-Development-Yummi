@@ -15,4 +15,5 @@ Yummi is a modern and stylish restaurant website designed for food lovers. It sh
 - React, Tailwind CSS  
   
 
-![Yummi](https://github.com/user-attachments/assets/e6712509-4c3e-470a-b15f-976ea1a81de7)
+![image](https://github.com/user-attachments/assets/a6147584-6e5b-434b-a32c-1a29dcd4c0e9)
+
